@@ -1,5 +1,5 @@
 'use strict'
-function play(messageEvent){
+function tock(messageEvent){
 	let length = (messageEvent.data.length/2) - 1;
 	for(let i = 0; 0 < length; i++){
 		if(0 === messageEvent.data[i]){
@@ -15,5 +15,5 @@ function play(messageEvent){
 	}
 }
 onmessage = messageEvent => {
-	onmessage = play;
+	onmessage = tock;
 };
